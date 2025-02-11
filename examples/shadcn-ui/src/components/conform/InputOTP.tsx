@@ -1,7 +1,7 @@
 import {
 	type FieldMetadata,
 	unstable_useControl as useControl,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 import { REGEXP_ONLY_DIGITS_AND_CHARS } from 'input-otp';
 import { type ElementRef, useRef } from 'react';
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '../ui/input-otp';

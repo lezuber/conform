@@ -7,7 +7,7 @@ import {
 	INTENT,
 	STATE,
 	serializeIntent,
-} from '@conform-to/dom';
+} from '@dinoTAX/conform-dom';
 import { createFormData } from './helpers';
 
 describe('conform-dom', () => {

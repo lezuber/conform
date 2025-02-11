@@ -2,7 +2,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import {
 	unstable_Control as Control,
 	type FieldMetadata,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 
 export function CheckboxGroupConform({
 	meta,

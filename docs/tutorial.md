@@ -7,7 +7,7 @@ In this tutorial, we will start with a basic contact form built with just Remix 
 Before start, please install conform on your project.
 
 ```sh
-npm install @conform-to/react @conform-to/zod --save
+npm install @dinoTAX/conform-react @dinoTAX/conform-zod --save
 ```
 
 ## Initial setup
@@ -209,7 +209,7 @@ const schema = z.object({
 Then, we can simplify the action with the `parseWithZod()` helper function. It will parse the form data and return a submission object with either the parsed value or the error.
 
 ```tsx
-import { parseWithZod } from '@conform-to/zod';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { z } from 'zod';
 import { sendMessage } from '~/message';
@@ -245,8 +245,8 @@ export async function action({ request }: ActionFunctionArgs) {
 Now, we can manage all the form metadata with the [useForm](./api/react/useForm.md) hook. We will also derive the validation attributes from the zod schema using the `getZodConstraint()` helper.
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod, getZodConstraint } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod, getZodConstraint } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { Form, useActionData } from '@remix-run/react';
 import { z } from 'zod';
@@ -328,8 +328,8 @@ Right now the contact form will be validated only when the user submit it. What 
 Let's setup the `shouldValidate` and `shouldRevalidate` options.
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import {
   type ActionFunctionArgs,
   type LoaderFunctionArgs,
@@ -370,8 +370,8 @@ export default function ContactUs() {
 At this point, our contact form is only validated on the server and takes a round trip to the server to validate the form each time the user types. Let's shorten the feedback loop with client validation.
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs, type LoaderFunctionArgs } from '@remix-run/node';
 import { Form, useActionData, useLoaderData } from '@remix-run/react';
 import { sendMessage } from '~/message';
@@ -422,8 +422,8 @@ import {
   getFormProps,
   getInputProps,
   getTextareaProps,
-} from '@conform-to/react';
-import { parseWithZod, getZodConstraint } from '@conform-to/zod';
+} from '@dinoTAX/conform-react';
+import { parseWithZod, getZodConstraint } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { Form, useActionData } from '@remix-run/react';
 import { sendMessage } from '~/message';
@@ -468,8 +468,8 @@ import {
   getFormProps,
   getInputProps,
   getTextareaProps,
-} from '@conform-to/react';
-import { parseWithZod, getZodConstraint } from '@conform-to/zod';
+} from '@dinoTAX/conform-react';
+import { parseWithZod, getZodConstraint } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { Form, useActionData } from '@remix-run/react';
 import { z } from 'zod';

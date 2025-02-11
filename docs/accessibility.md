@@ -7,7 +7,7 @@ Making your form accessible requires configuring each form element with proper a
 When it comes to accessibility, aria attributes are usually the first thing that comes to mind, which usually requires some unique ids to associate different elements together. Conform helps you by generating all the ids for you.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();
@@ -39,8 +39,8 @@ function Example() {
 Validation attributes also play an important role in accessibility, such as improving the hint for screen readers. With Conform, you can derive the validation attributes from your zod or yup schema and have them populated on each field metadata.
 
 ```tsx
-import { parseWithZod, getZodConstraint } from '@conform-to/zod';
-import { useForm } from '@conform-to/react';
+import { parseWithZod, getZodConstraint } from '@dinoTAX/conform-zod';
+import { useForm } from '@dinoTAX/conform-react';
 import { z } from 'zod';
 
 const schema = z.object({
@@ -80,7 +80,7 @@ function Example() {
 Progressive enhancement also helps with accessibility, such as minimizing the impact of temporary network issues. For example, Conform make it possible to manipulate a list of fields with the form data and state persisted even across page refreshes.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 export default function Example() {
   const [form, fields] = useForm();
@@ -131,8 +131,8 @@ Setting up all the attributes mentioned above can be tedious and error prone. Co
 Here is an example of how it compares to the manual setup. If you want to know more about the helpers, please check the corresponding documentation linked above
 
 ```tsx
-import { parseWithZod, getZodConstraint } from '@conform-to/zod';
-import { useForm } from '@conform-to/react';
+import { parseWithZod, getZodConstraint } from '@dinoTAX/conform-zod';
+import { useForm } from '@dinoTAX/conform-react';
 import { z } from 'zod';
 
 const schema = z.object({

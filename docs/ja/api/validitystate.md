@@ -1,4 +1,4 @@
-# @conform-to/validitystate
+# @dinoTAX/conform-validitystate
 
 > 現在のバージョンは、 Conform の React アダプターと互換性がありません。
 
@@ -9,7 +9,7 @@
 制約に基づいてサーバー上で FormData または URLSearchParams を解析し、オプショナルなエラーフォーマッターを使用する関数です。
 
 ```ts
-import { type FormConstraints, type FormatErrorArgs, parse } from '@conform-to/validitystate';
+import { type FormConstraints, type FormatErrorArgs, parse } from '@dinoTAX/conform-validitystate';
 
 const constraints = {
     email: { type: 'email', required: true },
@@ -92,7 +92,7 @@ function formatError({ input }: FormatErrorArgs) {
 クライアントのバリデーションをカスタマイズするために、制約とエラーフォーマッターを再利用するヘルパーです。エラーは `setCustomValidity` メソッドを使用してフォームコントロール要素に設定されます。新しいエラーを報告する前（つまり、 `form.reportValidity()` をトリガーする前）に呼び出すべきです。
 
 ```tsx
-import { validate } from '@conform-to/validitystate';
+import { validate } from '@dinoTAX/conform-validitystate';
 
 function Example() {
   return (
@@ -129,7 +129,7 @@ function Example() {
 このヘルパーは、デフォルトのエラーフォーマッターに基づいてエラーをカスタマイズしたい場合に役立ちます。
 
 ```ts
-import { type FormConstraints, type FormatErrorArgs, defaultFormatError } from '@conform-to/validitystate';
+import { type FormConstraints, type FormatErrorArgs, defaultFormatError } from '@dinoTAX/conform-validitystate';
 
 const constraints = {
     email: { type: 'email', required: true },
@@ -158,7 +158,7 @@ const submission = parse(formData, {
 実際のエラーメッセージは `validationMessage` プロパティに保存されます。これは、カスタムエラーフォーマッターが複数のエラーを返す場合に必要です。
 
 ```tsx
-import { getError } from '@conform-to/validitystate';
+import { getError } from '@dinoTAX/conform-validitystate';
 
 function Example() {
   const [error, setError] = useState({});

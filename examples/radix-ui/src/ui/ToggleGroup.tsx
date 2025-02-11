@@ -1,4 +1,4 @@
-import { type FieldMetadata, useInputControl } from '@conform-to/react';
+import { type FieldMetadata, useInputControl } from '@dinoTAX/conform-react';
 import * as RadixToggleGroup from '@radix-ui/react-toggle-group';
 import { type ElementRef, useRef } from 'react';
 

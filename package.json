@@ -1,6 +1,9 @@
 {
 	"private": true,
-	"name": "conform",
+	"name": "@dinoTAX/conform",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
 	"license": "MIT",
 	"scripts": {
 		"build": "pnpm run --filter \"./packages/*\" \"/^build:.*/\"",
@@ -17,11 +20,11 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.5",
-		"@conform-to/dom": "workspace:*",
-		"@conform-to/react": "workspace:*",
-		"@conform-to/validitystate": "workspace:*",
-		"@conform-to/yup": "workspace:*",
-		"@conform-to/zod": "workspace:*",
+		"@dinoTAX/conform-dom": "workspace:*",
+		"@dinoTAX/conform-react": "workspace:*",
+		"@dinoTAX/conform-validitystate": "workspace:*",
+		"@dinoTAX/conform-yup": "workspace:*",
+		"@dinoTAX/conform-zod": "workspace:*",
 		"@playwright/test": "^1.44.1",
 		"@types/node": "^20.10.4",
 		"@typescript-eslint/eslint-plugin": "^7.11.0",

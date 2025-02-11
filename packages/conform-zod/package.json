@@ -1,5 +1,8 @@
 {
-	"name": "@conform-to/zod",
+	"name": "@dinoTAX/conform-zod",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
 	"description": "Conform helpers for integrating with Zod",
 	"homepage": "https://conform.guide",
 	"license": "MIT",
@@ -34,7 +37,7 @@
 		"url": "https://github.com/edmundhung/conform/issues"
 	},
 	"dependencies": {
-		"@conform-to/dom": "workspace:*"
+		"@dinoTAX/conform-dom": "workspace:*"
 	},
 	"peerDependencies": {
 		"zod": "^3.21.0"

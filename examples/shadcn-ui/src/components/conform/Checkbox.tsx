@@ -1,7 +1,7 @@
 import {
 	unstable_useControl as useControl,
 	type FieldMetadata,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 import { useRef, type ElementRef } from 'react';
 import { Checkbox } from '@/components/ui/checkbox';
 

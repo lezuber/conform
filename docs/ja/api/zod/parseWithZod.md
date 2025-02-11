@@ -33,8 +33,8 @@ Zod スキーマ、または Zod スキーマを返す関数のいずれかで�
 ## 例
 
 ```tsx
-import { parseWithZod } from '@conform-to/zod';
-import { useForm } from '@conform-to/react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
+import { useForm } from '@dinoTAX/conform-react';
 import { z } from 'zod';
 
 const schema = z.object({

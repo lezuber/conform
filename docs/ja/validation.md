@@ -7,8 +7,8 @@ Conform は異なるバリデーションモードをサポートしています
 フォームを**完全にサーバーサイドで**バリデーションすることができます。これはフォームの送信に限らず、ユーザーがタイピングしているときやフィールドを離れるときにも機能します。これにより、バリデーションロジックをクライアントバンドルから除外することができます。しかし、ユーザーがタイピングしている間にバリデーションを行いたい場合、ネットワークの遅延が懸念されるかもしれません。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 export async function action({ request }: ActionArgs) {
@@ -48,8 +48,8 @@ export default function Signup() {
 クライアントサイドでバリデーションロジックを再利用し、即時のフィードバックを提供することができます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 
 // スキーマ定義をアクションの外に移動する
 const schema = z.object({
@@ -88,7 +88,7 @@ Conform は、少し異なる方法で非同期バリデーションをサポー
 以下は、メールアドレスがユニークであるかを検証する例です。
 
 ```tsx
-import { refine } from '@conform-to/zod';
+import { refine } from '@dinoTAX/conform-zod';
 
 // スキーマを共有する代わりに、スキーマクリエーターを準備します。
 function createSchema(
@@ -172,7 +172,7 @@ export default function Signup() {
 スキーマはすべてのフィールドを一緒に検証します。これは、特に非同期バリデーションの場合、実行コストがかかることがあります。一つの解決策は、送信の意図をチェックすることにより、バリデーションを最小限に抑えることです。
 
 ```tsx
-import { parseWithZod, conformZodMessage } from '@conform-to/zod';
+import { parseWithZod, conformZodMessage } from '@dinoTAX/conform-zod';
 
 function createSchema(
   // `intent` は `parseWithZod` ヘルパーによって提供されます。

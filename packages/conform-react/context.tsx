@@ -16,7 +16,7 @@ import {
 	isPrefix,
 	STATE,
 	INTENT,
-} from '@conform-to/dom';
+} from '@dinoTAX/conform-dom';
 import {
 	type FormEvent,
 	type ReactElement,

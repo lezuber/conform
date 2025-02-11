@@ -1,8 +1,8 @@
 import { Field, FieldError } from '@/components/Field';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 import { InputConform } from './components/conform/Input';
 import { DatePickerConform } from './components/conform/DatePicker';
@@ -44,7 +44,9 @@ const UserSubscriptionSchema = z.object({
 	accountType: z.enum(['personal', 'business'], {
 		required_error: 'You must select an account type',
 	}),
-	accountTypes: z.array(z.enum(['personal', 'business'])).min(1,'You must select at least one account type'),
+	accountTypes: z
+		.array(z.enum(['personal', 'business']))
+		.min(1, 'You must select at least one account type'),
 	interests: z
 		.array(z.string())
 		.min(3, 'You must select at least three interest'),
@@ -177,8 +179,9 @@ function App() {
 						]}
 					/>
 					{fields.accountTypes.allErrors && (
-						<FieldError>{
-							Object.values(fields.accountTypes.allErrors).flat()}</FieldError>
+						<FieldError>
+							{Object.values(fields.accountTypes.allErrors).flat()}
+						</FieldError>
 					)}
 				</Field>
 				<Field>

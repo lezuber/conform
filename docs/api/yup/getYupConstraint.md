@@ -15,8 +15,8 @@ The yup schema to be introspected.
 ## Example
 
 ```tsx
-import { getYupConstraint } from '@conform-to/yup';
-import { useForm } from '@conform-to/react';
+import { getYupConstraint } from '@dinoTAX/conform-yup';
+import { useForm } from '@dinoTAX/conform-react';
 import * as yup from 'yup';
 
 const schema = yup.object({

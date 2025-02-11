@@ -16,7 +16,7 @@ First, all helpers are renamed and can be imported individually:
 - `conform.fieldset` -> [getFieldsetProps](./api/react/getFieldsetProps.md)
 - `conform.collection` -> [getCollectionProps](./api/react/getCollectionProps.md)
 
-If you are using `conform.VALIDATION_UNDEFINED` and `conform.VALIDATION_SKIPPED` before, you will find them on our zod integration (`@conform-to/zod`) instead.
+If you are using `conform.VALIDATION_UNDEFINED` and `conform.VALIDATION_SKIPPED` before, you will find them on our zod integration (`@dinoTAX/conform-zod`) instead.
 
 - `conform.VALIDATION_SKIPPED` -> [conformZodMessage.VALIDATION_SKIPPED](./api/zod/conformZodMessage.md#conformzodmessagevalidation_skipped)
 - `conform.VALIDATION_UNDEFINED` -> [conformZodMessage.VALIDATION_UNDEFINED](./api/zod/conformZodMessage.md#conformzodmessagevalidation_undefined)
@@ -46,7 +46,7 @@ There are also some breaking changes on the options:
 First,`form.props` is removed. You can use the [getFormProps()](./api/react/getFormProps.md) helper instead.
 
 ```tsx
-import { useForm, getFormProps } from '@conform-to/react';
+import { useForm, getFormProps } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form] = useForm();
@@ -120,12 +120,12 @@ Here are all the equivalent methods:
 
 We have also renamed the APIs on each of the integrations with an unique name to avoid confusion. Here are the equivalent methods:
 
-#### `@conform-to/zod`
+#### `@dinoTAX/conform-zod`
 
 - `parse` -> [parseWithZod](./api/zod/parseWithZod.md)
 - `getFieldsetConstraint` -> [getZodConstraint](./api/zod/getZodConstraint.md)
 
-#### `@conform-to/yup`
+#### `@dinoTAX/conform-yup`
 
 - `parse` -> [parseWithYup](./api/yup/parseWithYup.md)
 - `getFieldsetConstraint` -> [getYupConstraint](./api/yup/getYupConstraint.md)
@@ -192,7 +192,7 @@ The `useInputEvent` hook is replaced by the [useInputControl](./api/react/useInp
 - You can now use `control.value` to integrate a custom input as a controlled input and update the value state through `control.change(value)`. The value will also be reset when a form reset happens
 
 ```tsx
-import { useForm, useInputControl } from '@conform-to/react';
+import { useForm, useInputControl } from '@dinoTAX/conform-react';
 import { CustomSelect } from './some-ui-library';
 
 function Example() {

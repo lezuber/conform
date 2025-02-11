@@ -15,8 +15,8 @@ const constraint = getYupConstraint(schema);
 ## 例
 
 ```tsx
-import { getYupConstraint } from '@conform-to/yup';
-import { useForm } from '@conform-to/react';
+import { getYupConstraint } from '@dinoTAX/conform-yup';
+import { useForm } from '@dinoTAX/conform-react';
 import * as yup from 'yup';
 
 const schema = yup.object({

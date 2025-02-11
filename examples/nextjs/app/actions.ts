@@ -1,7 +1,7 @@
 'use server';
 
 import { redirect } from 'next/navigation';
-import { parseWithZod } from '@conform-to/zod';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { todosSchema, loginSchema, createSignupSchema } from '@/app/schema';
 
 export async function login(prevState: unknown, formData: FormData) {

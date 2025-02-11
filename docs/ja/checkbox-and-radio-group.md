@@ -7,7 +7,7 @@
 ラジオグループを設定するには、すべての入力で **name** 属性が同じであることを確認してください。また、フィールドメタデータから initialValue を使用して、ラジオボタンがチェックされるべきかを導き出すこともできます。yup および zod からのエラーは、対応するパスに基づいてマッピングされ、各選択のエラーは、配列自体（例： `answers` ）ではなく、対応するインデックス（例： `answer[0]` ）にマッピングされます。すべてのエラーを表示したい場合は、フィールドメタデータの **allErrors** プロパティを代わりに使用することを検討できます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();
@@ -40,7 +40,7 @@ function Example() {
 チェックボックスグループの設定は、ラジオグループと似ていますが、チェックボックスがブール値なのかグループなのかについてサーバーサイドで情報が不足しているため、 initialValue は文字列または配列のいずれかになります。以下に示すように、 initialValue から **defaultChecked** 値を導出できます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();
@@ -76,7 +76,7 @@ function Example() {
 ただし、単一のチェックボックスの場合は、ブラウザによってデフォルトで **on** に設定されている入力 **value** と initialValue が一致するかどうかを確認できます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

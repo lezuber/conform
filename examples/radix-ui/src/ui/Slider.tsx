@@ -1,4 +1,4 @@
-import { FieldMetadata, useInputControl } from '@conform-to/react';
+import { FieldMetadata, useInputControl } from '@dinoTAX/conform-react';
 import * as RadixSlider from '@radix-ui/react-slider';
 import { ElementRef, useRef } from 'react';
 

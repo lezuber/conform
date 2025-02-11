@@ -9,7 +9,7 @@ const props = getInputProps(meta, options);
 ## 例
 
 ```tsx
-import { useForm, getInputProps } from '@conform-to/react';
+import { useForm, getInputProps } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

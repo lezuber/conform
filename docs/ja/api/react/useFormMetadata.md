@@ -25,7 +25,7 @@ const form = useFormMetadata(formId);
 フォームメタデータの型推論を改善するために、 `string` の代わりに `FormId<Schema, FormError>` 型を使用できます。
 
 ```tsx
-import { type FormId, useFormMetadata } from '@conform-to/react';
+import { type FormId, useFormMetadata } from '@dinoTAX/conform-react';
 
 type ExampleComponentProps = {
   formId: FormId<Schema, FormError>;
@@ -42,7 +42,7 @@ function ExampleComponent({ formId }: ExampleComponentProps) {
 コンポーネントをレンダリングする際には、 Conform によって提供されたフォーム ID を使用します。例えば、 `form.id` や `fields.fieldName.formId` は、既に `FormId<Schema, FormError>` として型付けされています。これにより、 TypeScript は型が互換性があるかをチェックし、互換性がない場合に警告を出すことができます。 `string` を渡すこともできますが、型チェックの能力は失われます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

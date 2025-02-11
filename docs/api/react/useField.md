@@ -33,7 +33,7 @@ The form metadata. It is the same object as the one returned by the [useForm](./
 You can use the `FieldName<FieldSchema, FormSchema, FormError>` type instead of `string` to improve the type inference of the field and form metadata returned.
 
 ```tsx
-import { type FieldName, useField } from '@conform-to/react';
+import { type FieldName, useField } from '@dinoTAX/conform-react';
 
 type ExampleComponentProps = {
   name: FieldName<FieldSchema, FormSchema, FormError>;
@@ -50,7 +50,7 @@ function ExampleComponent({ name }: ExampleComponentProps) {
 When rendering your component, you will use the name provided by Conform, such as `fields.fieldName.name` which is already typed as `FieldName<FieldSchema, FormSchema, FormError>`. This allows typescript to check if the type is compatible and warn you if it doesn't. You can still pass a `string`, but you will lose the ability for type checking.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

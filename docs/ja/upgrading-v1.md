@@ -16,7 +16,7 @@ Conform は現在、 Reactのバージョンが18以上である必要があり�
 - `conform.fieldset` -&gt; [getFieldsetProps](./api/react/getFieldsetProps.md)
 - `conform.collection` -&gt; [getCollectionProps](./api/react/getCollectionProps.md)
 
-以前 `conform.VALIDATION_UNDEFINED` および `conform.VALIDATION_SKIPPED` を使用していた場合、それらは zod インテグレーション (`@conform-to/zod`) に移されました。
+以前 `conform.VALIDATION_UNDEFINED` および `conform.VALIDATION_SKIPPED` を使用していた場合、それらは zod インテグレーション (`@dinoTAX/conform-zod`) に移されました。
 
 - `conform.VALIDATION_SKIPPED` -&gt; [conformZodMessage.VALIDATION_SKIPPED](./api/zod/conformZodMessage.md#conformzodmessagevalidation_skipped)
 - `conform.VALIDATION_UNDEFINED` -&gt; [conformZodMessage.VALIDATION_UNDEFINED](./api/zod/conformZodMessage.md#conformzodmessagevalidation_undefined)
@@ -46,7 +46,7 @@ Conform は現在、 Reactのバージョンが18以上である必要があり�
 まず、`form.props` が削除されました。代わりに [getFormProps()](./api/react/getFormProps.md) ヘルパーを使用できます。
 
 ```tsx
-import { useForm, getFormProps } from '@conform-to/react';
+import { useForm, getFormProps } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form] = useForm();
@@ -120,12 +120,12 @@ function Example() {
 
 混乱を避けるために、各統合における API を一意の名前に変更しました。こちらが同等のメソッドです:
 
-#### `@conform-to/zod`
+#### `@dinoTAX/conform-zod`
 
 - `parse` -&gt; [parseWithZod](./api/zod/parseWithZod.md)
 - `getFieldsetConstraint` -&gt; [getZodConstraint](./api/zod/getZodConstraint.md)
 
-#### `@conform-to/yup`
+#### `@dinoTAX/conform-yup`
 
 - `parse` -&gt; [parseWithYup](./api/yup/parseWithYup.md)
 - `getFieldsetConstraint` -&gt; [getYupConstraint](./api/yup/getYupConstraint.md)
@@ -192,7 +192,7 @@ export default function Example() {
 - カスタム input を制御された input として統合するために `control.value` を使用し、 `control.change(value)` を通じて値の状態を更新できるようになりました。フォームがリセットされると、値もリセットされます。
 
 ```tsx
-import { useForm, useInputControl } from '@conform-to/react';
+import { useForm, useInputControl } from '@dinoTAX/conform-react';
 import { CustomSelect } from './some-ui-library';
 
 function Example() {

@@ -1,5 +1,5 @@
-import type { Intent } from '@conform-to/react';
-import { conformZodMessage } from '@conform-to/zod';
+import type { Intent } from '@dinoTAX/conform-react';
+import { conformZodMessage } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 export const taskSchema = z.object({

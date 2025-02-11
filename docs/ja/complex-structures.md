@@ -13,8 +13,8 @@ Conform は、データ構造を示すために `object.property` および `arr
 ネストされたフィールドを設定するには、親フィールドのメタデータから `getFieldset()` メソッドを呼び出し、名前が自動的に推測される各子フィールドにアクセスしてください。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 const schema = z.object({
@@ -55,8 +55,8 @@ function Example() {
 フィールドのリストを設定する必要がある場合は、親フィールドのメタデータから `getFieldList()` メソッドを呼び出して、名前が自動的に推測される各アイテムフィールドにアクセスできます。リスト内のアイテムを変更したい場合は、 [Intent button](./intent-button.md#insert-remove-and-reorder-intents) ページで説明されているように、 `insert` 、 `remove` 、 `reorder` のインテントも使用できます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 const schema = z.object({
@@ -97,7 +97,7 @@ function Example() {
 ネストされた配列に対して、 `getFieldset()` と `getFieldList()` の両方を組み合わせて使用することもできます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

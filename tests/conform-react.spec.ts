@@ -5,7 +5,7 @@ import {
 	getTextareaProps,
 	getSelectProps,
 	getFieldsetProps,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 
 function createFieldMetadata(): FieldMetadata<string> {
 	return {

@@ -1,4 +1,4 @@
-import { type Constraint } from '@conform-to/dom';
+import { type Constraint } from '@dinoTAX/conform-dom';
 import type * as yup from 'yup';
 import {
 	type SchemaObjectDescription,

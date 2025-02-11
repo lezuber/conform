@@ -3,7 +3,7 @@ import {
 	type Submission,
 	formatPaths,
 	parse,
-} from '@conform-to/dom';
+} from '@dinoTAX/conform-dom';
 import {
 	type SafeParseReturnType,
 	type ZodTypeAny,

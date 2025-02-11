@@ -1,4 +1,4 @@
-import { FieldMetadata, getTextareaProps } from '@conform-to/react';
+import { FieldMetadata, getTextareaProps } from '@dinoTAX/conform-react';
 import { Textarea } from '@/components/ui/textarea';
 import { ComponentProps } from 'react';
 

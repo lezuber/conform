@@ -1,4 +1,4 @@
-import { type Intent, type Submission, parse } from '@conform-to/dom';
+import { type Intent, type Submission, parse } from '@dinoTAX/conform-dom';
 import * as yup from 'yup';
 
 export { getYupConstraint } from './constraint';

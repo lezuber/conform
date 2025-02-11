@@ -9,7 +9,7 @@ const control = useInputControl(metaOrOptions);
 ## Example
 
 ```tsx
-import { useForm, useInputControl } from '@conform-to/react';
+import { useForm, useInputControl } from '@dinoTAX/conform-react';
 import { Select, Option } from './custom-ui';
 
 function Example() {
@@ -65,7 +65,7 @@ A method to be called when . This will dispatch both the [focus](https://develop
 Conform will focus on the first invalid input element if submission failed. However, this might not work if your have a custom input. To fix this, you can forward the focus from the input element by listening to the focus event and trigger `element.focus()` on the desired element.
 
 ```tsx
-import { useForm, useInputControl } from '@conform-to/react';
+import { useForm, useInputControl } from '@dinoTAX/conform-react';
 import { Select, Option } from './custom-ui';
 
 function Example() {

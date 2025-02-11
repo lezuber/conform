@@ -1,4 +1,4 @@
-# Find the current version of the @conform-to/dom package
+# Find the current version of the @dinoTAX/conform-dom package
 VERSION=$(node -p "require('./packages/conform-dom/package.json').version")
 
 # Create a tmp file with the version replaced

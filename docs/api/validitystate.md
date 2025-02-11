@@ -1,4 +1,4 @@
-# @conform-to/validitystate
+# @dinoTAX/conform-validitystate
 
 > The current version is not compatible with conform react adapter.
 
@@ -9,7 +9,7 @@
 A function to parse FormData or URLSearchParams on the server based on the constraints and an optional error formatter.
 
 ```ts
-import { type FormConstraints, type FormatErrorArgs, parse } from '@conform-to/validitystate';
+import { type FormConstraints, type FormatErrorArgs, parse } from '@dinoTAX/conform-validitystate';
 
 const constraints = {
     email: { type: 'email', required: true },
@@ -92,7 +92,7 @@ If no error formatter is provided, check the [defaultFormatError](#defaultformat
 A helper to customize client validation by reusing the constraints and error formatter. Error will be set on the form control element using the `setCustomValidity` method. It should be called before reporting new error (i.e. triggering `form.reportValidity()`).
 
 ```tsx
-import { validate } from '@conform-to/validitystate';
+import { validate } from '@dinoTAX/conform-validitystate';
 
 function Example() {
   return (
@@ -129,7 +129,7 @@ This is the default error formatter used by [parse](#parse) to represent error b
 This helper is useful if you want to customize the error based on the default error formatter.
 
 ```ts
-import { type FormConstraints, type FormatErrorArgs, defaultFormatError } from '@conform-to/validitystate';
+import { type FormConstraints, type FormatErrorArgs, defaultFormatError } from '@dinoTAX/conform-validitystate';
 
 const constraints = {
     email: { type: 'email', required: true },
@@ -158,7 +158,7 @@ const submission = parse(formData, {
 It gets the actual error messages stored on the `validationMessage` property. This is needed if the custom error formatter returns multiple error.
 
 ```tsx
-import { getError } from '@conform-to/validitystate';
+import { getError } from '@dinoTAX/conform-validitystate';
 
 function Example() {
   const [error, setError] = useState({});

@@ -3,7 +3,7 @@ import {
 	getZodConstraint,
 	parseWithZod,
 	conformZodMessage,
-} from '@conform-to/zod';
+} from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 import { createFormData } from './helpers';
 

@@ -7,8 +7,8 @@
 ファイル input の設定は、他の input と何ら変わりません。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 const schema = z.object({
@@ -40,8 +40,8 @@ function Example() {
 複数のファイルをアップロードできるようにするには、ファイル入力に **multiple** 属性を設定する必要があります。フィールドメタデータのエラーが各ファイルのすべてのエラーを含んでいない可能性があることに注意することが重要です。 yup および zod からのエラーは、対応するパスに基づいてマッピングされ、各選択のエラーは、配列自体（例： `files` ）ではなく、対応するインデックス（例： `files[0]` ）にマッピングされます。すべてのエラーを表示したい場合は、フィールドメタデータの **allErrors** プロパティを代わりに使用することを検討できます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parse } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parse } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 const schema = z.object({

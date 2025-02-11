@@ -7,7 +7,7 @@ A submit button will contribute to the form data when it triggers the submission
 The submitter is particularly useful when you want to extend the form with different behaviour based on the intent.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Product() {
   const [form] = useForm({
@@ -48,7 +48,7 @@ Conform utilizes the submission intent for all form controls, such as validating
 To trigger a validation, you can configure a button with the validate intent.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function EmailForm() {
   const [form, fields] = useForm();
@@ -69,7 +69,7 @@ When the button is clicked, conform identifies the serialized intent with the re
 However, if you want to trigger the validation once the user leaves the field, you can also trigger the validate intent directly.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function EmailForm() {
   const [form, fields] = useForm();
@@ -90,7 +90,7 @@ function EmailForm() {
 You can also modify a field with the **reset** and **update** intent.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 export default function Tasks() {
   const [form, fields] = useForm();
@@ -135,7 +135,7 @@ Be aware that both intents requires setting up the inputs with the **key** from 
 To manipulate a field list, you can use the **insert**, **remove** and **reorder** intents.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 export default function Tasks() {
   const [form, fields] = useForm();

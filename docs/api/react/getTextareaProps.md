@@ -9,7 +9,7 @@ const props = getTextareaProps(meta, options);
 ## Example
 
 ```tsx
-import { useForm, getTextareaProps } from '@conform-to/react';
+import { useForm, getTextareaProps } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

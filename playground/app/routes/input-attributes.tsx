@@ -1,4 +1,4 @@
-import { type SubmissionResult } from '@conform-to/dom';
+import { type SubmissionResult } from '@dinoTAX/conform-dom';
 import {
 	getCollectionProps,
 	getFormProps,
@@ -6,7 +6,7 @@ import {
 	getSelectProps,
 	getTextareaProps,
 	useForm,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 import {
 	json,
 	type ActionFunctionArgs,

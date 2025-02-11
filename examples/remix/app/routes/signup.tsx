@@ -1,6 +1,6 @@
-import type { Intent } from '@conform-to/react';
-import { getFormProps, getInputProps, useForm } from '@conform-to/react';
-import { parseWithZod, conformZodMessage } from '@conform-to/zod';
+import type { Intent } from '@dinoTAX/conform-react';
+import { getFormProps, getInputProps, useForm } from '@dinoTAX/conform-react';
+import { parseWithZod, conformZodMessage } from '@dinoTAX/conform-zod';
 import type { ActionArgs } from '@remix-run/node';
 import { json, redirect } from '@remix-run/node';
 import { Form, useActionData } from '@remix-run/react';

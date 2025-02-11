@@ -8,8 +8,8 @@ import {
 	useInputControl,
 	getFormProps,
 	getSelectProps,
-} from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+} from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import type { ActionFunctionArgs, LoaderFunctionArgs } from '@remix-run/node';
 import { json } from '@remix-run/node';
 import { Form, useActionData, useLoaderData } from '@remix-run/react';

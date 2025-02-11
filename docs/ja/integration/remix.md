@@ -3,8 +3,8 @@
 [Remix](https://remix.run/) とインテグレーションしたログインフォームの例です。完全な例は [こちら](../../examples/remix) です。
 
 ```tsx
-import { getFormProps, getInputProps, useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { getFormProps, getInputProps, useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import type { ActionArgs } from '@remix-run/node';
 import { json, redirect } from '@remix-run/node';
 import { Form, useActionData } from '@remix-run/react';

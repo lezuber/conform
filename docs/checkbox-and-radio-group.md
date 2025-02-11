@@ -7,7 +7,7 @@ Setting up a checkbox or radio group is no different from any standard inputs.
 To set up a radio group, make sure the **name** attribute is the same for all the inputs. You can also use the initialValue from the field metadata to derive whether the radio button should be checked.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();
@@ -40,7 +40,7 @@ function Example() {
 Setting up a checkbox group would be similar to a radio group except the initialValue can be either a string or an array because of missing information on the server side whether the checkbox is a boolean or a group. You can derive the **defaultChecked** value from the initialValue as shown below. As the errors from both yup and zod are mapped based on the corresponding paths and the errors of each option will be mapped to its corresponding index, e.g. `answer[0]` instead of the array itself, e.g. `answers`. If you want to display all the errors, you can consider using the **allErrors** property on the field metadata instead.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();
@@ -76,7 +76,7 @@ function Example() {
 However, if it is just a single checkbox, you can check if the initialValue matches the input **value** which defaults to **on** by the browser.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

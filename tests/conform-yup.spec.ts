@@ -1,7 +1,7 @@
 import { describe, test, expect } from 'vitest';
-import { parseWithYup, getYupConstraint } from '@conform-to/yup';
+import { parseWithYup, getYupConstraint } from '@dinoTAX/conform-yup';
 import * as yup from 'yup';
-import { type Constraint, STATE } from '@conform-to/dom';
+import { type Constraint, STATE } from '@dinoTAX/conform-dom';
 import { createFormData } from './helpers';
 
 describe('conform-yup', () => {

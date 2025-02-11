@@ -25,8 +25,8 @@ Yup スキーマ、または Yup スキーマを返す関数のいずれかで�
 ## 例
 
 ```tsx
-import { parseWithYup } from '@conform-to/yup';
-import { useForm } from '@conform-to/react';
+import { parseWithYup } from '@dinoTAX/conform-yup';
+import { useForm } from '@dinoTAX/conform-react';
 import * as yup from 'yup';
 
 const schema = yup.object({

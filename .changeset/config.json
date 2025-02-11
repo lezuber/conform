@@ -4,10 +4,10 @@
 	"commit": false,
 	"fixed": [
 		[
-			"@conform-to/dom",
-			"@conform-to/react",
-			"@conform-to/yup",
-			"@conform-to/zod"
+			"@dinoTAX/conform-dom",
+			"@dinoTAX/conform-react",
+			"@dinoTAX/conform-yup",
+			"@dinoTAX/conform-zod"
 		]
 	],
 	"linked": [],

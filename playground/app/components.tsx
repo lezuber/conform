@@ -1,4 +1,4 @@
-import type { FieldMetadata } from '@conform-to/react';
+import type { FieldMetadata } from '@dinoTAX/conform-react';
 import type { ReactNode } from 'react';
 
 interface PlaygroundProps {

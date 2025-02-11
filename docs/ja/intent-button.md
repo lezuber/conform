@@ -7,7 +7,7 @@
 submitter は、インテント(意図)に基づいて異なる振る舞いでフォームを拡張したい場合に特に便利です。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Product() {
   const [form] = useForm({
@@ -48,7 +48,7 @@ Conform は、フィールドのバリデーションや削除など、すべて
 バリデーションをトリガーするには、バリデート インテントを使用してボタンを構成できます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function EmailForm() {
   const [form, fields] = useForm();
@@ -69,7 +69,7 @@ function EmailForm() {
 しかし、ユーザーがフィールドを離れた時点でバリデーションをトリガーしたい場合は、バリデート インテントを直接トリガーすることもできます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function EmailForm() {
   const [form, fields] = useForm();
@@ -90,7 +90,7 @@ function EmailForm() {
 **reset** および **update** のインテントを使ってフィールドを変更することもできます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 export default function Tasks() {
   const [form, fields] = useForm();
@@ -135,7 +135,7 @@ export default function Tasks() {
 フィールドリストを操作するには、 **insert** 、 **remove** 、 **reorder** のインテントを使用できます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 export default function Tasks() {
   const [form, fields] = useForm();

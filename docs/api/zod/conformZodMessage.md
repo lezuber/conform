@@ -17,9 +17,9 @@ This message is used to indicate that the validation is not defined and Conform 
 Here is a signup form example which validates if the email is unique.
 
 ```tsx
-import type { Intent } from '@conform-to/react';
-import { useForm } from '@conform-to/react';
-import { parseWithZod, conformZodMessage } from '@conform-to/zod';
+import type { Intent } from '@dinoTAX/conform-react';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod, conformZodMessage } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 // Instead of sharing a schema, prepare a schema creator

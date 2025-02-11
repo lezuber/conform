@@ -9,7 +9,7 @@ const control = useInputControl(metaOrOptions);
 ## 例
 
 ```tsx
-import { useForm, useInputControl } from '@conform-to/react';
+import { useForm, useInputControl } from '@dinoTAX/conform-react';
 import { Select, Option } from './custom-ui';
 
 function Example() {
@@ -65,7 +65,7 @@ input の値です。これを使用して、制御された input を設定す�
 送信に失敗した場合、Conform は最初の無効な input 要素にフォーカスします。しかし、カスタム input を使用している場合、これは機能しないかもしれません。これを修正するには、フォーカスイベントをリスニングして、希望する要素に対して `element.focus()` をトリガーすることで、input 要素からフォーカスを転送できます。
 
 ```tsx
-import { useForm, useInputControl } from '@conform-to/react';
+import { useForm, useInputControl } from '@dinoTAX/conform-react';
 import { Select, Option } from './custom-ui';
 
 function Example() {

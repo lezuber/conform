@@ -1,5 +1,8 @@
 {
-	"name": "@conform-to/validitystate",
+	"name": "@dinoTAX/conform-validitystate",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
 	"description": "Validate on the server using the same rules as the browser",
 	"homepage": "https://conform.guide",
 	"license": "MIT",

@@ -2,7 +2,7 @@ import { Switch } from '@/components/ui/switch';
 import {
 	unstable_useControl as useControl,
 	type FieldMetadata,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 import { useRef, type ElementRef } from 'react';
 
 export function SwitchConform({ meta }: { meta: FieldMetadata<boolean> }) {

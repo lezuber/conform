@@ -9,7 +9,7 @@ const collectionProps = getCollectionProps(meta, options);
 ## Example
 
 ```tsx
-import { useForm, getCollectionProps } from '@conform-to/react';
+import { useForm, getCollectionProps } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

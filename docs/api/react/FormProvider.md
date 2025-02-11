@@ -3,7 +3,7 @@
 A React component that renders a [Context Provider](https://react.dev/reference/react/createContext#provider) for the form context. It is required if you want to use [useField](./useField.md) or [useFormMetadata](./useFormMetadata.md) hook.
 
 ```tsx
-import { FormProvider, useForm } from '@conform-to/react';
+import { FormProvider, useForm } from '@dinoTAX/conform-react';
 
 export default function SomeParent() {
   const [form, fields] = useForm();
@@ -45,7 +45,7 @@ function Example() {
 This is useful if you need to have one form inside another due to layout constraints.
 
 ```tsx
-import { FormProvider, useForm } from '@conform-to/react';
+import { FormProvider, useForm } from '@dinoTAX/conform-react';
 
 function Field({ name, formId }) {
   //  useField will look for the closest FormContext if no formId is provided

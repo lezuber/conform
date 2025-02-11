@@ -1,6 +1,6 @@
-import type { SubmissionResult, Intent } from '@conform-to/react';
-import { getFormProps, getInputProps, useForm } from '@conform-to/react';
-import { parseWithZod, conformZodMessage } from '@conform-to/zod';
+import type { SubmissionResult, Intent } from '@dinoTAX/conform-react';
+import { getFormProps, getInputProps, useForm } from '@dinoTAX/conform-react';
+import { parseWithZod, conformZodMessage } from '@dinoTAX/conform-zod';
 import type { ActionFunctionArgs } from 'react-router-dom';
 import { Form, useActionData, json, redirect } from 'react-router-dom';
 import { z } from 'zod';

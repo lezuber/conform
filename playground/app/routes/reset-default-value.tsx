@@ -1,5 +1,5 @@
-import { useForm, getFormProps, getInputProps } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm, getFormProps, getInputProps } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import type { ActionFunctionArgs, LoaderFunctionArgs } from '@remix-run/node';
 import { json } from '@remix-run/node';
 import { Form, Link, useActionData, useLoaderData } from '@remix-run/react';

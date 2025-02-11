@@ -7,8 +7,8 @@ import {
 	getFormProps,
 	getInputProps,
 	getFieldsetProps,
-} from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+} from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { todosSchema, loginSchema, createSignupSchema } from '@/app/schema';
 
 function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {

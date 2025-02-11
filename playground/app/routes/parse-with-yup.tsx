@@ -1,5 +1,5 @@
-import { getFormProps, getInputProps, useForm } from '@conform-to/react';
-import { parseWithYup } from '@conform-to/yup';
+import { getFormProps, getInputProps, useForm } from '@dinoTAX/conform-react';
+import { parseWithYup } from '@dinoTAX/conform-yup';
 import {
 	type LoaderFunctionArgs,
 	type ActionFunctionArgs,

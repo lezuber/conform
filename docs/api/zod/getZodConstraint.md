@@ -15,8 +15,8 @@ The zod schema to be introspected.
 ## Example
 
 ```tsx
-import { getZodConstraint } from '@conform-to/zod';
-import { useForm } from '@conform-to/react';
+import { getZodConstraint } from '@dinoTAX/conform-zod';
+import { useForm } from '@dinoTAX/conform-react';
 import { z } from 'zod';
 
 const schema = z.object({

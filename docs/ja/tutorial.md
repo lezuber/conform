@@ -7,7 +7,7 @@
 開始する前に、プロジェクトに Conform をインストールしてください。
 
 ```sh
-npm install @conform-to/react @conform-to/zod --save
+npm install @dinoTAX/conform-react @dinoTAX/conform-zod --save
 ```
 
 ## 初期設定
@@ -209,7 +209,7 @@ const schema = z.object({
 次に、 `parseWithZod()` ヘルパー関数を使って action を簡素化できます。この関数はフォームデータを解析し、解析された値またはエラーを含む送信オブジェクトを返します。
 
 ```tsx
-import { parseWithZod } from '@conform-to/zod';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { z } from 'zod';
 import { sendMessage } from '~/message';
@@ -245,8 +245,8 @@ export async function action({ request }: ActionFunctionArgs) {
 これで、 [useForm](./api/react/useForm.md) フックを使って、すべてのフォームメタデータを管理できます。また、 `getZodConstraint()` ヘルパーを使用して、 zod スキーマからバリデーション属性を導出します。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod, getZodConstraint } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod, getZodConstraint } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { Form, useActionData } from '@remix-run/react';
 import { z } from 'zod';
@@ -327,8 +327,8 @@ export default function ContactUs() {
 `shouldValidate` オプションと `shouldRevalidate` オプションを設定しましょう。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import {
   type ActionFunctionArgs,
   type LoaderFunctionArgs,
@@ -369,8 +369,8 @@ export default function ContactUs() {
 この時点で、私たちのお問い合わせフォームはサーバー上でのみ検証され、ユーザーがタイプするたびにフォームを検証するためにサーバーへの往復が発生します。クライアント検証でフィードバックループを短縮しましょう。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs, type LoaderFunctionArgs } from '@remix-run/node';
 import { Form, useActionData, useLoaderData } from '@remix-run/react';
 import { sendMessage } from '~/message';
@@ -421,8 +421,8 @@ import {
   getFormProps,
   getInputProps,
   getTextareaProps,
-} from '@conform-to/react';
-import { parseWithZod, getZodConstraint } from '@conform-to/zod';
+} from '@dinoTAX/conform-react';
+import { parseWithZod, getZodConstraint } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { Form, useActionData } from '@remix-run/react';
 import { sendMessage } from '~/message';
@@ -467,8 +467,8 @@ import {
   getFormProps,
   getInputProps,
   getTextareaProps,
-} from '@conform-to/react';
-import { parseWithZod, getZodConstraint } from '@conform-to/zod';
+} from '@dinoTAX/conform-react';
+import { parseWithZod, getZodConstraint } from '@dinoTAX/conform-zod';
 import { type ActionFunctionArgs } from '@remix-run/node';
 import { Form, useActionData } from '@remix-run/react';
 import { z } from 'zod';

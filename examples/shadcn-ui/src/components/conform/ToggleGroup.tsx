@@ -1,7 +1,7 @@
 import {
 	FieldMetadata,
 	unstable_useControl as useControl,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 import { ComponentProps, ElementRef, useRef } from 'react';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 
@@ -19,33 +19,36 @@ export const ToggleGroupConform = ({
 
 	return (
 		<>
-			{type === 'single' ? <input
-				name={meta.name}
-				ref={control.register}
-				className="sr-only"
-				tabIndex={-1}
-				defaultValue={meta.initialValue}
-				onFocus={() => {
-					toggleGroupRef.current?.focus();
-				}}
-			/> : <select
-				multiple
-				name={meta.name}
-				className="sr-only"
-				ref={control.register}
-				onFocus={() => {
-					toggleGroupRef.current?.focus();
-				}}
-				defaultValue={meta.initialValue}
-				tabIndex={-1}
-			>
-				{items.map((item) => (
-					<option value={item.value} key={item.value}>
-						{item.label}
-					</option>
-				))}
-			</select>
-			}
+			{type === 'single' ? (
+				<input
+					name={meta.name}
+					ref={control.register}
+					className="sr-only"
+					tabIndex={-1}
+					defaultValue={meta.initialValue}
+					onFocus={() => {
+						toggleGroupRef.current?.focus();
+					}}
+				/>
+			) : (
+				<select
+					multiple
+					name={meta.name}
+					className="sr-only"
+					ref={control.register}
+					onFocus={() => {
+						toggleGroupRef.current?.focus();
+					}}
+					defaultValue={meta.initialValue}
+					tabIndex={-1}
+				>
+					{items.map((item) => (
+						<option value={item.value} key={item.value}>
+							{item.label}
+						</option>
+					))}
+				</select>
+			)}
 
 			<ToggleGroup
 				{...props}

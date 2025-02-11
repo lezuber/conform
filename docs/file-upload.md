@@ -7,8 +7,8 @@ To handle file uploads, the form **encType** attribute must be set to `multipart
 Setting up a file input is no different from other inputs.
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 const schema = z.object({
@@ -40,8 +40,8 @@ function Example() {
 To allow uploading multiple files, you need to set the **multiple** attribute on the file input. It is important to note that the errors on the field metadata might not include all the errors on each file. As the errors from both yup and zod are mapped based on the corresponding paths and the errors of each file will be mapped to its corresponding index, e.g. `files[0]` instead of the array itself, e.g. `files`. If you want to display all the errors, you can consider using the **allErrors** property on the field metadata instead.
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parse } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parse } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 const schema = z.object({

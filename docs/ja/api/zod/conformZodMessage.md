@@ -17,9 +17,9 @@
 以下は、メールアドレスがユニークであるかを検証するサインアップフォームの例です。
 
 ```tsx
-import type { Intent } from '@conform-to/react';
-import { useForm } from '@conform-to/react';
-import { parseWithZod, conformZodMessage } from '@conform-to/zod';
+import type { Intent } from '@dinoTAX/conform-react';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod, conformZodMessage } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
   // スキーマを共有する代わりに、スキーマを作成する関数 `createSchema` を準備します。

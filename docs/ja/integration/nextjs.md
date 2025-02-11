@@ -17,7 +17,7 @@ export const loginSchema = z.object({
 'use server'; // action.ts
 
 import { redirect } from 'next/navigation';
-import { parseWithZod } from '@conform-to/zod';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { loginSchema } from '@/app/schema';
 
 export async function login(prevState: unknown, formData: FormData) {
@@ -36,8 +36,8 @@ export async function login(prevState: unknown, formData: FormData) {
 ```tsx
 'use client'; // form.tsx
 
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { useFormState } from 'react-dom';
 import { login } from '@/app/actions';
 import { loginSchema } from '@/app/schema';

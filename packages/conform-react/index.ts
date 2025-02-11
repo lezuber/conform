@@ -6,7 +6,7 @@ export {
 	type FormId,
 	type FieldName,
 	parse,
-} from '@conform-to/dom';
+} from '@dinoTAX/conform-dom';
 export {
 	type FieldMetadata,
 	type FormMetadata,

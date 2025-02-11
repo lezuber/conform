@@ -2,7 +2,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import {
 	FieldMetadata,
 	unstable_useControl as useControl,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 import { ElementRef, useRef } from 'react';
 
 export function RadioGroupConform({

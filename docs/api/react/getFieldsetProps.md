@@ -9,7 +9,7 @@ const props = getFieldsetProps(meta, options);
 ## Example
 
 ```tsx
-import { useForm, getFieldsetProps } from '@conform-to/react';
+import { useForm, getFieldsetProps } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

@@ -1,11 +1,11 @@
-import type { FieldName } from '@conform-to/react';
+import type { FieldName } from '@dinoTAX/conform-react';
 import {
 	FormProvider,
 	useForm,
 	useField,
 	useInputControl,
 	parse,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 import {
 	Stack,
 	FormControl,

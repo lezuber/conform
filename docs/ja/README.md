@@ -16,7 +16,7 @@
   - [Remix](./integration/remix.md)
   - [Next.js](./integration/nextjs.md)
 - API リファレンス
-  - @conform-to/react
+  - @dinoTAX/conform-react
     - [useForm](./api/react/useForm.md)
     - [useField](./api/react/useField.md)
     - [useFormMetadata](./api/react/useFormMetadata.md)
@@ -29,10 +29,10 @@
     - [getSelectProps](./api/react/getSelectProps.md)
     - [getTextareaProps](./api/react/getTextareaProps.md)
     - [getCollectionProps](./api/react/getCollectionProps.md)
-  - @conform-to/yup
+  - @dinoTAX/conform-yup
     - [parseWithYup](./api/yup/parseWithYup.md)
     - [getYupConstraint](./api/yup/getYupConstraint.md)
-  - @conform-to/zod
+  - @dinoTAX/conform-zod
     - [parseWithZod](./api/zod/parseWithZod.md)
     - [getZodConstraint](./api/zod/getZodConstraint.md)
     - [conformZodMessage](./api/zod/conformZodMessage.md)

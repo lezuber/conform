@@ -1,4 +1,4 @@
-import { FieldMetadata, getInputProps } from '@conform-to/react';
+import { FieldMetadata, getInputProps } from '@dinoTAX/conform-react';
 import { Input } from '../ui/input';
 import { ComponentProps } from 'react';
 

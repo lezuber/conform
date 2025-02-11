@@ -1,7 +1,7 @@
 import {
 	FieldMetadata,
 	unstable_useControl as useControl,
-} from '@conform-to/react';
+} from '@dinoTAX/conform-react';
 import { ComponentProps, ElementRef, useRef } from 'react';
 import { Slider } from '@/components/ui/slider';
 

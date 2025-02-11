@@ -25,7 +25,7 @@ The form metadata. It is the same object as the one returned by the [useForm](./
 You can use the `FormId<Schema, FormError>` type instead of `string` to improve the type inference of the form metadata.
 
 ```tsx
-import { type FormId, useFormMetadata } from '@conform-to/react';
+import { type FormId, useFormMetadata } from '@dinoTAX/conform-react';
 
 type ExampleComponentProps = {
   formId: FormId<Schema, FormError>;
@@ -42,7 +42,7 @@ function ExampleComponent({ formId }: ExampleComponentProps) {
 When rendering your component, you will use the form id provided by Conform, such as `form.id` or `fields.fieldName.formId` which are already typed as `FormId<Schema, FormError>`. This allows typescript to check if the type is compatible and warn you if it doesn't. You can still pass a `string`, but you will lose the ability for type checking.
 
 ```tsx
-import { useForm } from '@conform-to/react';
+import { useForm } from '@dinoTAX/conform-react';
 
 function Example() {
   const [form, fields] = useForm();

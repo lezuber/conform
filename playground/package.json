@@ -9,11 +9,11 @@
 		"typecheck": "tsc"
 	},
 	"dependencies": {
-		"@conform-to/dom": "workspace:*",
-		"@conform-to/react": "workspace:*",
-		"@conform-to/validitystate": "workspace:*",
-		"@conform-to/yup": "workspace:*",
-		"@conform-to/zod": "workspace:*",
+		"@dinoTAX/conform-dom": "workspace:*",
+		"@dinoTAX/conform-react": "workspace:*",
+		"@dinoTAX/conform-validitystate": "workspace:*",
+		"@dinoTAX/conform-yup": "workspace:*",
+		"@dinoTAX/conform-zod": "workspace:*",
 		"@headlessui/react": "^1.7.19",
 		"@headlessui/tailwindcss": "^0.2.0",
 		"@heroicons/react": "^2.1.3",

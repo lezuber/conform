@@ -1,4 +1,4 @@
-import { type FieldMetadata, useInputControl } from '@conform-to/react';
+import { type FieldMetadata, useInputControl } from '@dinoTAX/conform-react';
 import * as RadixSwitch from '@radix-ui/react-switch';
 import { type ElementRef, useRef } from 'react';
 

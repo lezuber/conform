@@ -15,8 +15,8 @@ Conform は、Web 標準に基づいて HTML フォームを段階的に強化�
 Conformは、クライアントからサーバーへのフォーム送信のライフサイクルを制御し、`useForm()` フックを通じてフォームの状態を提供します。フォームのマークアップを制限せず、有効なHTMLフォームであればどのようなものでも動作します。フォームの値は、[FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData) Web APIを使用してDOMから取得され、イベント委譲によって同期されます。
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 import { login } from './your-auth-library';
 import { useActionResult, redirect } from './your-server-framework';

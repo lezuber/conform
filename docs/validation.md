@@ -7,8 +7,8 @@ Conform supports different validation modes. In this section, we will walk you t
 You can validate a form **fully server side**. It is not limited to form submission but also works when user is typing or leaving a field. This allows you to exclude the validation logic from the client bundle. But network latency might be a concern if you want to validate while user is typing.
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 import { z } from 'zod';
 
 export async function action({ request }: ActionArgs) {
@@ -48,8 +48,8 @@ export default function Signup() {
 You can always reuse the validation logic on the client side for instant feedback.
 
 ```tsx
-import { useForm } from '@conform-to/react';
-import { parseWithZod } from '@conform-to/zod';
+import { useForm } from '@dinoTAX/conform-react';
+import { parseWithZod } from '@dinoTAX/conform-zod';
 
 // Move the schema definition out of action
 const schema = z.object({
@@ -88,7 +88,7 @@ Conform supports async validation in a slightly different way. Instead of sendin
 Here is an example which validates if the email is unique.
 
 ```tsx
-import { refine } from '@conform-to/zod';
+import { refine } from '@dinoTAX/conform-zod';
 
 // Instead of sharing a schema, prepare a schema creator
 function createSchema(
@@ -173,7 +173,7 @@ export default function Signup() {
 As the schema validates all fields together. This could be expensive especially with async validation. One solution is to minimize the validation by checking the submission intent.
 
 ```tsx
-import { parseWithZod, conformZodMessage } from '@conform-to/zod';
+import { parseWithZod, conformZodMessage } from '@dinoTAX/conform-zod';
 
 function createSchema(
   // The `intent` will be provieded by the `parseWithZod` helper
